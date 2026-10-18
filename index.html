@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eine einfache Testwebsite, bereitgestellt über GitHub Pages.">
+  <title>Testwebsite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Testwebsite</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#ueber">Über</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Willkommen auf meiner Testwebsite</h1>
+        <p class="lead">Eine schlichte, statische Website – gehostet mit GitHub Pages.</p>
+        <a href="#features" class="button">Mehr erfahren</a>
+      </div>
+    </section>
+
+    <section id="ueber" class="section">
+      <div class="container">
+        <h2>Über diese Seite</h2>
+        <p>
+          Diese Website besteht nur aus HTML, CSS und ein wenig JavaScript.
+          Es wird kein Build-Schritt benötigt: Jede Änderung, die auf den
+          <code>main</code>-Branch gepusht wird, ist kurz darauf online.
+        </p>
+      </div>
+    </section>
+
+    <section id="features" class="section section-alt">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Schnell</h3>
+            <p>Statische Dateien laden ohne Umwege direkt im Browser.</p>
+          </article>
+          <article class="card">
+            <h3>Responsiv</h3>
+            <p>Das Layout passt sich an Smartphone, Tablet und Desktop an.</p>
+          </article>
+          <article class="card">
+            <h3>Hell &amp; dunkel</h3>
+            <p>Die Farben folgen automatisch der Einstellung deines Systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <p>Fragen oder Anregungen? Schau auf GitHub vorbei:</p>
+        <p><a href="https://github.com/manu130898">github.com/manu130898</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Testwebsite</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
